@@ -5,14 +5,16 @@ import { ThemeProvider } from './Contexts/Theme.js';
 import { useEffect, useState } from 'react';
 
 function App() {
-    const [themeMode, setThemeMode] = useState("light")
+    const [themeMode, setThemeMode] = useState(localStorage.getItem("theme") || "light")
 
     const darkTheme = ()=>{
         setThemeMode("dark")
+        localStorage.setItem("theme", "dark")
     }
 
     const lightTheme = ()=>{
         setThemeMode("light")
+        localStorage.setItem("theme", "light")
     }
 
 
