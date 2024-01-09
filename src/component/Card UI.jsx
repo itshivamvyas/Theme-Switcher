@@ -1,7 +1,7 @@
 export default function CardUI() {
     return (
         <div className="w-full bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
-            <a href="/">
+            <a href="/" className="block w-full aspect-square">
                 <img className="p-8 rounded-t-lg" src="./shivam.jpg" alt="Shivam Image" />
             </a>
             <div className="px-5 pb-5">
